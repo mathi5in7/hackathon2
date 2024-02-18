@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InventoryIguana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <link rel="stylesheet" href="style.css">
+        <ul>
+            <li><a href="index.html">InventoryIguana</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <nav></nav>
+        <main>
+            <img src="images/iggy-removebg-preview.png" alt="Iggy">
+            <h1 id="greeting"></h1>
+            <p>Cold weather bringing you down? Lucky for you, Iggy the Iguana can turn that frown upside down! Iggy will remind you when your medications need to be replaced, just choose from the item list and give an estimate of when you bought it.</p>
+            <nav></nav>
+            <button type="input" class="add" onclick="openPopup()">
+                Add item
+            </button>
+            <div class="popup" id="popup">
+                <h3>Input the details of your item!</h3>
+                <h4>Item name:</h4>
+                <h4>Purchase date:</h4>
+                <h4>Expiry date:</h4>
+                <button type="button" onclick="closePopup()">Add</button>
+            </div>
+        </main>
+    </div>
+
+    <!--add item popup-->
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+        // Retrieve username from Local Storage and display it
+        document.addEventListener("DOMContentLoaded", function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('greeting').textContent = `Hey, ${username}!`;
+            }
+        });
+    </script>
+   
+    <!--grid layout-->
+
+    <div id="grid-layout-33">
+        <!-- Your grid layout content here -->
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

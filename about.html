@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <link rel="stylesheet" href="style.css">
+      <ul>
+        <li>
+          <a href="index.html">InventoryIguana</a>
+        </li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hearts">
+        <h1>About Us</h1>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h2>Meet Iggy</h2>
+          <p>InventoryIguana is a vital tool for individuals, especially older adults, to maintain a consistent medication regimen. With customizable alerts and notifications, it reminds users to take medications on time and prompts timely refills, reducing the risk of missed doses. By promoting adherence, InventoryIguana enhances overall health and well-being, addressing the significant risks of medication non-adherence, which contribute to approximately 125,000 premature deaths annually.</p>
+        </div>
+        <button class="cta-button" onclick="location.href='https://www.fda.gov/drugs/special-features/why-you-need-take-your-medications-prescribed-or-instructed'">Learn More</button>
+      </div>
+      <div class="hero-image">
+        <img src="images/meds.png">
+      </div>
+    </section>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .hearts h1 {
+    font-size: 55px;
+    margin-top: 35px;
+    margin-left: 35px;
+    color: #111D13;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+  }

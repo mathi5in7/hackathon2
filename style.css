@@ -1,0 +1,214 @@
+body {
+    background-color: #A1CCA5;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    height: 20px;
+}
+
+
+main {
+    background-color: #A1CCA5;
+    height: 400px;
+}
+
+
+
+
+h1 {
+    font-size: 84px;
+    color: #111D13;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+}
+img {
+    width:320px;
+    height:300px;
+    float:right;
+
+
+}
+p {
+    color: #111D13;
+    font-family: "Poppins", sans-serif;
+}
+.navbar ul{
+    list-style-type: none;
+    fill-opacity: 0;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    margin: 0px;
+    font-weight:normal;
+}
+.navbar a{
+    color:#111D13;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.navbar a:hover{
+    font-weight: bold;
+}
+.navbar li{
+    float: left;
+
+
+}
+
+
+.add{
+    padding: 10px 60px;
+    background: #415D43;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    color: white;
+    margin-bottom:8cm;
+}
+
+
+.add:hover{
+    font-weight: bold;
+}
+
+
+.popup{
+    width: 300px;
+    background: white;
+    border: 2px solid #415D43;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #415D43;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+.popup h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+
+}
+
+
+.popup button{
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #415D43;
+    color: white;
+    font-size: 18;
+    border-radius: 10px;
+    outline:none ;
+    box-shadow: 0 5px 5px rgba(0,0,0,0,2);
+}
+
+
+.popup h4{
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+
+h5{
+    color:#415D43;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 20px;
+ 
+}
+
+
+.h2btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 28px;
+    color: #415D43;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+}
+
+
+#grid-layout-33 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+    width: 80%;
+    margin-left: 50px ;
+    margin-right: 50px ;
+}
+
+
+#grid-layout-33 > div {
+    background-color: transparent;
+    border: 2px solid #709775;
+    padding: 18px;
+    text-align: left;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+
+.deletebtn{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: inline-flex;
+    float: right;
+}
+
+
+.btnicon{
+    font-size: 32;
+}
+
+
+.deletebtn:hover{
+    border: 1px solid grey;
+    border-radius: 150px;
+}
+
+
+
+
+
+
